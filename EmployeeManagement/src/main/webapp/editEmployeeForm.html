@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Edit Employee</h2>
+    <form action="editEmployee" method="post">
+        <input type="hidden" name="id" value="${employee.id}">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="${employee.name}" required>
+
+        <label for="designation">Designation:</label>
+        <input type="text" id="designation" name="designation" value="${employee.designation}" required>
+
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary" value="${employee.salary}" required>
+
+        <button type="submit">Save Changes</button>
+    </form>
+</div>
+
+</body>
+</html>
